@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #000;
+      font-family: 'Inter', Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+    .bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18vw;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 3px #888;
+      text-stroke: 3px #888;
+      opacity: 0.15;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(30, 30, 30, 0.7);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.12);
+      width: 400px;
+      max-width: 90vw;
+      margin: 60px auto 0 auto;
+      padding: 36px 32px 24px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 32px 0;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .social-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: 24px;
+      padding: 12px 0 12px 20px;
+      color: #fff;
+      font-size: 1.35rem;
+      font-weight: 400;
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+      position: relative;
+      overflow: hidden;
+    }
+    .social-btn:hover {
+      background: rgba(255,255,255,0.18);
+      box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);
+    }
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: #aaa;
+      text-align: center;
+      opacity: 0.7;
+      letter-spacing: 0.1px;
+    }
+    @media (max-width: 600px) {
+      .bg-text {
+        font-size: 14vw;
+      }
+      .card {
+        width: 98vw;
+        padding: 18px 4vw 16px 4vw;
+      }
+      .card h1 {
+        font-size: 2.1rem;
+      }
+      .social-btn {
+        font-size: 1.05rem;
+        padding-left: 12px;
+      }
+      .social-icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-text">About Me</div>
+  <div class="card">
+    <h1>About Me</h1>
+    <div class="social-list">
+      <a class="social-btn" href="https://github.com/Focus098xdd" target="_blank">
+        <span class="social-icon">
+          <img src="github.png" alt="Github" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        Github
+      </a>
+      <a class="social-btn" href="https://www.facebook.com/focus.kub.562216/" target="_blank">
+        <span class="social-icon">
+          <img src="facebook.png" alt="Facebook" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        Facebook
+      </a>
+      <a class="social-btn" href="https://www.instagram.com/focus098xdd_/" target="_blank">
+        <span class="social-icon">
+          <img src="instagram.png" alt="Instagram" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        Instagram
+      </a>
+      <a class="social-btn" href="https://line.me/ti/p/Mlk5WuViHV" target="_blank">
+        <span class="social-icon">
+          <img src="line.png" alt="Line" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        Line
+      </a>
+      <a class="social-btn" href="https://www.tiktok.com/@focus098xdd" target="_blank">
+        <span class="social-icon">
+          <img src="tiktok.png" alt="TikTok" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        TikTok
+      </a>
+      <a class="social-btn" href="https://discord.gg/95R3WYUEgy" target="_blank">
+        <span class="social-icon">
+          <img src="discord.png" alt="Discord" style="width:100%;height:100%;object-fit:contain;" />
+        </span>
+        Discord
+      </a>
+    </div>
+    <div class="footer">Dev@xstudio.net (shit I forget to pay for doamin)</div>
+  </div>
+</body>
+</html>
